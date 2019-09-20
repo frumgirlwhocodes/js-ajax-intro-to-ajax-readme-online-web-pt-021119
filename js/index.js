@@ -9,7 +9,7 @@ function showRepositories() {
   document.getElementById('repositories').innerHTML = repoList;
 }
 
- function getRepositories() {
+function getRepositories() {
   const req = new XMLHttpRequest();
   req.addEventListener('load', showRepositories);
   req.open('GET', 'https://api.github.com/users/octocat/repos');
